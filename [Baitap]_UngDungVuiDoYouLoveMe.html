@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PetGames</title>
+    <script type="text/javascript">
+
+        function run(){
+            document.getElementById("ko").style.left = Math.floor(Math.random() *400) + "px";
+            document.getElementById("ko").style.top = Math.floor(Math.random() *400) + "px";
+            //alert(document.getElementById("ko").style.left);
+        }
+    </script>
+
+    <style>
+        .container{
+            width: 100%;
+        }
+        .main{
+            width: 300px;
+            margin: auto;
+        }
+        #ko{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <img src="images/heart.jpeg"/>
+                <br>
+                DO YOU LOVE ME?
+            </div>
+            <button type="button" id="co">YES</button>
+            <button type="button" id="ko" onmouseover="run()">NO</button>
+        </div>
+    </div>
+</body>
+</html>
